@@ -43,6 +43,7 @@ jobs:
       - run:
           name: "Generate App key"
           command: php artisan key:generate
+          
       - run:
           name: "Create Environment file and generate app key"
           command: |
