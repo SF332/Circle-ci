@@ -47,9 +47,9 @@ jobs:
       - run:
           name: "Create database and run migration"
           command: |
-            touch database/database.sqlite
+            touch database/database.mysql
             php artisan migrate --env=testing
-            
+
       # run tests with phpunit
       - run:
           name: "Run Tests"
