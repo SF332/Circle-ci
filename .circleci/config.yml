@@ -22,7 +22,7 @@ jobs:
           name: "Create Environment file"
           command: |
             mv .env.testing .env
-            php artisan migrate --env=testing
+            php artisan key:generate
 
       # Download and cache dependencies
       - restore_cache:
