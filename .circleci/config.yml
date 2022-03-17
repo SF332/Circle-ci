@@ -22,7 +22,6 @@ jobs:
           name: "Create Environment file"
           command: |
             mv .env.testing .env
-            php artisan key:generate
 
       # Download and cache dependencies
       - restore_cache:
@@ -45,6 +44,7 @@ jobs:
           name: "Generate App key"
           command: php artisan key:generate
 
+      
       # run tests with phpunit
       - run:
           name: "Run Tests"
