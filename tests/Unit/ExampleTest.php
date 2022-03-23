@@ -25,6 +25,6 @@ class ExampleTest extends TestCase
             'password' => "testpassword"
         ]);
         
-        $this->assertEquals('TestUser', $user->name);
+        $this->assertEquals('Test User', $user->name);
     }
 }
